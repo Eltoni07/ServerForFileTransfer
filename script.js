@@ -6,7 +6,7 @@ document.getElementById('redirectButton').addEventListener('click', function() {
     checkServerConnection(targetURL);
   } else {
     document.getElementById('statusMessage').innerText = "Kodi invalid, Vendos kodin perseri";
-    document.getElementById('resetButton').style.display = "block";
+    document.getElementById('resetButton').style.display = "none";
   }
 });
 
@@ -36,5 +36,7 @@ document.getElementById('serverInput').addEventListener('input', function() {
   const inputValue = document.getElementById('serverInput').value;
   if (inputValue === '0') {
     document.getElementById('resetButton').style.display = "block";
+  } else {
+    document.getElementById('resetButton').style.display = "none";
   }
 });
