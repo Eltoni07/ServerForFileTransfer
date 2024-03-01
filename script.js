@@ -36,11 +36,7 @@ document.getElementById('serverInput').addEventListener('input', function() {
   const inputValue = document.getElementById('serverInput').value;
   if (inputValue === '121212') {
     document.getElementById('resetButton').style.display = "block";
-  } else if (inputValue === '255'){
- 
- const targetURL = `https://eltoni07.github.io/ServerForFileTransfer/public/web/web.html`;
-    window.open(targetURL, '_blank');
-    checkServerConnection(targetURL);
+  
   }
     else {
     document.getElementById('resetButton').style.display = "none";
